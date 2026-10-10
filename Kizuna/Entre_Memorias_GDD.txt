@@ -1,0 +1,346 @@
+GDD — ENTRE MEMÓRIAS
+Documento de Design de Jogo
+Versão de produção reduzida
+
+============================================================
+1. VISÃO GERAL
+============================================================
+
+Título provisório: Entre Memórias
+Gênero: aventura narrativa, exploração e fantasia sobrenatural
+Perspectiva: 2D, visão de cima (top-down)
+Estilo visual: pixel art
+Plataforma e ferramenta: PC, desenvolvido no GameMaker
+Idioma principal: português, com expressões pontuais em espanhol
+Ambientação: pequena vila do México durante a véspera do Día de los Muertos
+
+Conceito central:
+Um jovem desperta sem lembranças em uma vila mexicana durante o Día de los Muertos. Enquanto os espíritos deixam de encontrar o caminho para o descanso, ele precisa explorar caminhos e templos antigos para restaurar o equilíbrio entre os vivos e os mortos. Ao recuperar fragmentos do passado, descobre que sua própria existência está ligada ao desequilíbrio e a uma tragédia envolvendo seu antigo melhor amigo.
+
+Pilares da experiência:
+- Explorar ambientes pequenos, atmosféricos e cheios de pistas.
+- Descobrir a história por meio de diálogos, placas, altares e memórias.
+- Resolver objetivos simples de exploração e coleta.
+- Criar contraste entre a beleza do Día de los Muertos e o mistério de almas que não conseguem descansar.
+- Priorizar uma experiência concluível dentro do tempo disponível para o projeto escolar.
+
+============================================================
+2. PREMISSA E HISTÓRIA
+============================================================
+
+A história se passa em uma pequena vila do México durante a véspera do Día de los Muertos. Segundo as tradições da vila, nessa data as almas podem retornar por uma noite para visitar aqueles que ainda se lembram delas.
+
+Há muito tempo, antigos templos ajudam a manter o equilíbrio entre o mundo dos vivos e o mundo dos mortos. Eles não existem para aprisionar os espíritos, mas para orientar as almas por meio da memória, da amizade, do equilíbrio e da aceitação.
+
+Naquele ano, porém, algo está errado: as almas não conseguem partir, os vivos sofrem pesadelos e os templos começam a perder sua luz.
+
+A anciã da vila é uma cartomante e guardiã espiritual. Sua família cuida dos altares e das histórias antigas. Durante o ritual anual, ela tem uma visão de uma alma cercada por flores de cempasúchil. Não vê seu rosto, mas compreende que essa alma poderá ajudar a restaurar o equilíbrio.
+
+Na manhã seguinte, moradores encontram um jovem desacordado perto de um dos caminhos e cuidam dele. Quando desperta, ele não lembra seu nome, sua vida ou como chegou ali. A anciã reconhece nele a energia da alma de sua visão, mas não conhece toda a verdade sobre sua identidade ou seu destino.
+
+A anciã pede que o jovem descubra por que os espíritos perderam o caminho e restaure o equilíbrio. A resposta está nos templos e nas lembranças que ele recuperará durante a jornada.
+
+A verdade:
+O protagonista não renasceu nem ocupa o corpo de outra pessoa. Ele é uma alma que nunca conseguiu descansar. Anos atrás, ele e seu melhor amigo eram guardiões dos templos. Ao descobrir uma profecia, o amigo acreditou que um sacrifício impediria uma tragédia e matou o protagonista. A decisão foi desesperada, não motivada por ódio, mas causou o desequilíbrio que pretendia evitar.
+
+Consumido pela culpa e incapaz de aceitar a perda, o antigo amigo começou a pesquisar rituais proibidos e fundou um culto dedicado a impedir que as almas partissem. Sua crença era: “Enquanto ninguém partir, ninguém será perdido.” Ao manipular os templos, ele agravou a ruptura entre os dois mundos.
+
+No confronto final, os dois recuperam as memórias e entendem que continuam presos ao mesmo acontecimento. A conclusão deve enfatizar que a culpa e o medo da perda não justificam impedir os outros de encontrar paz.
+
+Desfecho planejado:
+O ritual é encerrado, os espíritos voltam a encontrar seu caminho e o protagonista começa a desaparecer entre pétalas de cempasúchil. Ele pergunta à companheira quem ela é. Ela revela, de forma indireta, que também é uma alma que já encontrou paz e que voltou temporariamente para ajudar outras almas. A Morte aparece de forma serena, estende a mão ao protagonista e o convida a seguir. A vila celebra o Día de los Muertos em paz, e os altares voltam a brilhar.
+
+============================================================
+3. PERSONAGENS
+============================================================
+
+ELIAN — PROTAGONISTA
+- Jovem encontrado desacordado perto da vila.
+- Desperta sem nome, memória ou explicação para sua presença.
+- É uma alma que não conseguiu descansar após uma morte trágica.
+- O jogador controla seus movimentos e explora o mundo por meio dele.
+- Sua história é revelada gradualmente através de diálogos e acontecimentos nos templos.
+
+MIRASOL — COMPANHEIRA E GUIA
+- Jovem que encontra ou ajuda o protagonista após seu despertar.
+- Conhece as tradições da vila e ajuda a interpretar pistas e rituais.
+- É gentil, mas guarda informações que não explica diretamente.
+- Não luta; sua função narrativa é orientar, explicar tradições e ajudar em rituais.
+- A revelação planejada é que ela também é uma alma, que já encontrou paz e recebeu a oportunidade de retornar temporariamente como guia de outras almas.
+- Na versão reduzida, não terá inteligência artificial de companheira seguindo o jogador. Sua presença será representada por diálogos e cenas simples.
+
+A ANCIÃ / CARTOMANTE
+- Guardiã espiritual da comunidade e das histórias dos templos.
+- Faz a visão que liga o protagonista ao desequilíbrio.
+- Orienta o jogador sem revelar toda a verdade logo no início.
+- O nome próprio pode ser definido durante a produção; “Inés” é uma opção, mas não é obrigatório.
+
+O ANTIGO MELHOR AMIGO / LÍDER DO CULTO
+- Antigo companheiro do protagonista e também guardião dos templos.
+- Matou o protagonista acreditando estar impedindo uma catástrofe.
+- A culpa o levou a tentar impedir que qualquer alma partisse.
+- Não é um vilão que busca poder; sua motivação central é o medo de perder alguém novamente.
+- Aparece no confronto final, quando a história do passado é finalmente revelada.
+
+A MORTE
+- Figura serena, não uma inimiga.
+- Aparece no final para guiar o protagonista ao descanso.
+- Deve ser representada com respeito e tranquilidade, evitando uma apresentação monstruosa ou puramente ameaçadora.
+
+============================================================
+4. ESTRUTURA DO MUNDO E ROOMS
+============================================================
+
+A versão de produção tem oito rooms de exploração, mais uma room de menu inicial, totalizando nove rooms caso todas estejam presentes. O plano original previa quatro templos, mas o escopo foi reduzido para dois templos jogáveis por causa do tempo de produção. Os quatro valores narrativos originais serão condensados nos diálogos, nos objetos e nos acontecimentos dos dois templos restantes.
+
+1. Rm_Inicio
+   - Menu inicial.
+   - Mostra o título do jogo e o botão JOGAR.
+   - O botão leva à Rm_Casa.
+
+2. Rm_Casa
+   - Primeiro espaço de jogo após o menu.
+   - Introduz o despertar e a sensação de desorientação.
+   - Saída para a vila.
+
+3. Rm_Vila
+   - Centro de orientação e ligação entre caminhos.
+   - Espaço para diálogos com Mirasol e a anciã.
+   - Inclui placas que explicam a atmosfera e apontam objetivos.
+   - Conecta aos dois trajetos de exploração.
+
+4. Rm_Caminho1
+   - Primeiro trecho da rota do Templo de Cristal.
+   - Exploração simples e pistas ambientais.
+
+5. Rm_Caminho2
+   - Segundo trecho da rota do Templo de Cristal.
+   - Aproxima o jogador do templo.
+
+6. Rm_Templo_Cristal
+   - Primeiro templo jogável.
+   - O jogador encontra o cristal e deve levá-lo ao altar.
+   - Ao colocar o cristal, o altar muda para o sprite com o cristal e começa a brilhar.
+   - Momento narrativo associado às primeiras lembranças e ao desequilíbrio.
+
+7. Rm_Caminho3
+   - Primeiro trecho da rota do Templo das Velas.
+   - Contém três dos seis cogumelos colecionáveis.
+
+8. Rm_Caminho4
+   - Segundo trecho da rota do Templo das Velas.
+   - Contém os outros três cogumelos e conduz ao templo.
+
+9. Rm_Templo_Velas
+   - Segundo templo jogável.
+   - O jogador precisa ter coletado os seis cogumelos.
+   - Depois disso, tocar em cada uma das seis velas faz com que ela acenda.
+   - Quando todas as seis estiverem acesas, o altar muda para seu sprite aceso.
+
+Observação de organização:
+As oito rooms de exploração são Rm_Casa, Rm_Vila, Rm_Caminho1, Rm_Caminho2, Rm_Templo_Cristal, Rm_Caminho3, Rm_Caminho4 e Rm_Templo_Velas. Com Rm_Inicio, o total do projeto é nove rooms.
+
+============================================================
+5. MECÂNICAS PRINCIPAIS
+============================================================
+
+MOVIMENTAÇÃO
+- Movimento em quatro direções: cima, baixo, esquerda e direita.
+- O jogador usa as setas do teclado.
+- Colisões com objetos de cenário impedem a passagem por árvores e obstáculos sólidos.
+- Algumas árvores especiais permitem passagem e ficam transparentes quando o jogador passa por trás delas.
+
+TRANSIÇÕES ENTRE ROOMS
+- As portas são objetos separados e identificados conforme a direção da transição.
+- Ao tocar uma porta, a room de destino é aberta diretamente.
+- A variável de origem controla a posição em que o jogador reaparece na room seguinte.
+- O efeito de escurecimento foi experimentado, mas removido temporariamente para preservar a confiabilidade das transições durante a produção.
+
+DIÁLOGOS
+- A caixa de diálogo usa o sprite Spr_Dialogo e o objeto Obj_Dialogo.
+- Os textos são organizados em páginas por meio de arrays.
+- O nome exibido muda de acordo com quem fala, usando nomes_array alinhado com texto_array.
+- Espaço ou Enter avança as páginas e fecha a caixa quando o diálogo termina.
+- Placas, Mirasol e a anciã podem iniciar diálogos usando o mesmo sistema.
+- Os textos podem incluir expressões em espanhol, acompanhadas de português quando necessário para manter a compreensão.
+
+COLETA DOS COGUMELOS
+- Existem seis cogumelos no total: três em Rm_Caminho3 e três em Rm_Caminho4.
+- Cada cogumelo tem um ID individual de 1 a 6.
+- Ao tocar um cogumelo, o jogador o coleta, a contagem aumenta e a instância desaparece.
+- A lista global de IDs coletados impede que os cogumelos reapareçam ao voltar para uma room.
+- Os seis cogumelos são necessários para ativar o ritual das velas.
+
+CRISTAL E ALTAR
+- No projeto atual, Obj_Altar2 representa o altar de cristal; Obj_Altar1 representa o altar das velas. Manter essa correspondência consistente no código evita confusões.
+- O cristal é um item separado e pode ser recolhido pelo jogador.
+- O estado de posse é guardado por uma variável global.
+- Ao chegar ao altar certo com o cristal, o jogador o entrega e o item deixa de estar em sua posse.
+- O altar muda do sprite apagado para o sprite com cristal e brilho.
+- O progresso deve continuar guardado ao sair e voltar para a room.
+
+VELAS E ALTAR
+- No projeto atual, Obj_Altar1 representa o altar das velas e o objeto de vela apagada representa cada uma das seis velas individuais.
+- Existem seis velas individuais na room do Templo das Velas.
+- Cada vela tem um ID próprio.
+- A mecânica só permite acendê-las depois da coleta dos seis cogumelos.
+- Quando o jogador passa por uma vela, ela muda para seu sprite aceso.
+- Quando as seis velas estão acesas, o altar muda para seu sprite iluminado.
+- A animação deve usar o sprite aceso com vários quadros e manter a posição visual da vela apagada, alinhando origens e dimensões dos sprites.
+
+MENU INICIAL
+- Room dedicada chamada Rm_Inicio.
+- Fundo composto por uma imagem de cenário.
+- Título “Entre Memórias” e botão JOGAR.
+- O botão é desenhado por código em tons de laranja, com borda dourada e texto claro.
+- Ao clicar, o jogo entra diretamente em Rm_Casa.
+- A transição com escurecimento foi testada, mas revertida para uma troca direta a fim de evitar que o jogo entrasse na Casa sem clicar ou apresentasse erros no destino da room.
+
+ÁUDIO
+- Música principal: deve tocar na Casa, Vila e caminhos.
+- Música de templo: substitui a principal ao entrar em Rm_Templo_Cristal ou Rm_Templo_Velas.
+- Efeitos curtos: passos, coleta de cogumelo, avanço de diálogo e ativação de altar.
+- O gerenciador de áudio deve ser persistente e existir uma única vez, colocado na room inicial de gameplay ou criado de forma controlada.
+- As músicas devem trocar apenas quando o recurso desejado mudar, evitando sobrepor várias reproduções da mesma faixa.
+
+============================================================
+6. DIREÇÃO VISUAL E SONORA
+============================================================
+
+VISUAL
+- Pixel art 2D top-down.
+- Paleta principal: roxo, lilás, rosa e laranja, com sombras escuras.
+- Atmosfera misteriosa, melancólica e espiritual; evitar aparência excessivamente infantil.
+- Elementos culturais: flores de cempasúchil, velas, altares, oferendas e referências respeitosas ao Día de los Muertos.
+- Interfaces: título separado do fundo, botão JOGAR legível e caixa de diálogo própria.
+- O texto deve usar uma fonte legível que inclua caracteres acentuados em português e espanhol.
+
+ÁUDIO
+- A música principal deve apresentar identidade mexicana ou folk melancólico e permanecer na exploração.
+- A faixa de templo deve ser mais misteriosa e atmosférica.
+- Efeitos de passo e de coleta devem ser curtos e não excessivamente altos.
+- O efeito de altar deve marcar a conclusão do ritual sem tocar repetidamente a cada quadro.
+- O som dos diálogos deve ser discreto para não cansar durante falas longas.
+
+============================================================
+7. MUDANÇAS DE ESCOPO MOTIVADAS PELO TEMPO DE PRODUÇÃO
+============================================================
+
+A premissa original é mais ampla do que a versão prática do jogo. Para tornar possível finalizar o projeto dentro do prazo, as seguintes reduções são assumidas como decisões de produção, e não como falhas narrativas:
+
+1. Quatro templos foram reduzidos a dois templos jogáveis.
+   - Original: Templo da Memória, Templo da Amizade, Templo do Equilíbrio e Templo do Descanso.
+   - Versão produzida: Templo de Cristal e Templo das Velas.
+   - Adaptação: as funções de memória, amizade, equilíbrio e descanso serão condensadas em diálogos, pistas e eventos nos dois templos. Não será necessário criar quatro conjuntos completos de rooms, puzzles e sprites.
+
+2. A companheira não terá sistema de acompanhamento do jogador.
+   - Original: Mirasol acompanha toda a jornada e ajuda presencialmente.
+   - Versão produzida: sua função será apresentada por diálogos e aparições simples. Não haverá IA de seguimento, navegação, animação de caminhada acompanhando o jogador ou suporte para combate.
+   - Motivo: reduzir programação, animação e testes de colisão.
+
+3. Os diálogos serão baseados em páginas pré-escritas.
+   - Original potencial: conversas com várias interações e reações complexas.
+   - Versão produzida: caixa reutilizável, nome do personagem, arrays de falas e avanço por Espaço ou Enter.
+   - Motivo: o mesmo sistema atende placas, Mirasol e anciã sem criar uma estrutura narrativa complexa.
+
+4. As tarefas dos templos serão simples e visuais.
+   - Templo de Cristal: recolher um cristal e levá-lo ao altar; o altar troca de sprite e brilha.
+   - Templo das Velas: coletar seis cogumelos, acender seis velas individualmente e ativar o altar ao completar o conjunto.
+   - Motivo: priorizar objetivos claros, fáceis de testar e visualmente satisfatórios em vez de puzzles longos.
+
+5. As transições visuais foram simplificadas.
+   - A versão atual usa transições diretas entre rooms para priorizar estabilidade.
+   - O efeito de fade/escurecimento fica como melhoria opcional, porque as tentativas anteriores causaram problemas com a inicialização do menu e o destino da room.
+
+6. O menu inicial será simples.
+   - Fundo em imagem, título e botão JOGAR.
+   - Ação do botão: iniciar diretamente a Rm_Casa.
+   - Opções, seleção de capítulos e outros menus não são essenciais para a versão mínima.
+
+7. A trilha sonora será limitada a três camadas principais de conteúdo.
+   - Uma música principal para casa, vila e caminhos.
+   - Uma música diferente para os templos.
+   - Efeitos curtos para passos, cogumelos, diálogos e ativação de altares.
+   - A terceira faixa escolhida para exploração poderá permanecer sem uso se isso simplificar a implementação e a mistura sonora.
+
+8. O final terá uma sequência breve.
+   - A revelação do passado, o confronto com o antigo amigo, a aparição da Morte e o descanso das almas serão apresentados por diálogo, uma luta simples se o tempo permitir, e uma cena final curta.
+   - Combates complexos, múltiplas rotas de final e cinemáticas elaboradas ficam fora do escopo mínimo.
+
+============================================================
+8. ESCOPO MÍNIMO E ITENS OPCIONAIS
+============================================================
+
+OBRIGATÓRIO PARA A VERSÃO FINAL
+- Menu inicial que leva à Rm_Casa.
+- Movimento do protagonista e transições confiáveis entre rooms.
+- Diálogos da Mirasol e da anciã.
+- Placas com pistas e instruções.
+- Coleta persistente dos seis cogumelos.
+- Cristal que pode ser recolhido e colocado no altar correto.
+- Seis velas que acendem individualmente após a coleta dos cogumelos.
+- Troca dos sprites dos altares para os estados ativados.
+- Música principal e música dos templos.
+- Efeitos sonoros essenciais.
+- Um encerramento narrativo que explique o passado e permita às almas descansar.
+
+OPCIONAL SE HOUVER TEMPO
+- Fade de tela em todas as transições.
+- Fade de áudio entre músicas.
+- Animação elaborada da Mirasol caminhando até o jogador.
+- Retratos personalizados na caixa de diálogo.
+- Efeitos de tela escurecendo nos altares.
+- Mais diálogos opcionais e placas ambientais.
+- Terceira música para caminhos, caso não complique a troca de áudio.
+- Combate final complexo ou mais de um final.
+
+============================================================
+9. ESTADO DO DESENVOLVIMENTO
+============================================================
+
+Implementado ou já trabalhado durante a produção:
+- Movimento em quatro direções.
+- Rooms de exploração e sistema de portas.
+- Ajuste de posições de chegada por origem.
+- Árvores especiais que ficam transparentes quando o jogador passa por trás.
+- Coleta dos seis cogumelos com IDs individuais e persistência ao voltar às rooms.
+- Caixa de diálogo reutilizável com várias páginas e nomes de personagens.
+- Placas que usam mensagens específicas por instância.
+- Base do menu inicial com imagem, título e botão JOGAR.
+- Sprites apagados e acesos para altares e velas.
+- Recursos de áudio importados ou em processo de organização.
+
+A testar/terminar com prioridade:
+- Confirmar que o cristal recolhido ativa o altar correto e que o altar mantém o sprite aceso ao voltar à room.
+- Confirmar que cada vela acende na posição correta, com a chama animada, sem deslocamento entre sprites.
+- Confirmar que o altar das velas só ativa quando os seis cogumelos foram coletados e as seis velas estão acesas.
+- Garantir que a fonte da caixa de diálogo inclui acentos e é legível em pixel art.
+- Corrigir e testar o gerenciador de áudio usando os nomes reais dos recursos existentes no Navegador de recursos.
+- Testar o botão JOGAR e cada transição entre rooms.
+- Verificar o fluxo do jogo inteiro desde Rm_Inicio até o final, sem erros.
+
+============================================================
+10. CRITÉRIOS DE CONCLUSÃO
+============================================================
+
+O jogo estará pronto para entrega quando:
+1. O menu inicial abrir sem erros e o botão JOGAR levar à Rm_Casa.
+2. O jogador puder percorrer as rooms e retornar por portas sem ficar preso ou reaparecer no lugar errado.
+3. As falas aparecerem corretamente, com nomes coerentes e caracteres acentuados.
+4. Os cogumelos forem recolhidos individualmente e continuarem coletados após trocar de room.
+5. O cristal puder ser levado até o altar e ativá-lo.
+6. As seis velas só puderem ser acesas após a coleta dos seis cogumelos; cada vela conservar seu estado.
+7. O altar das velas mudar de sprite somente quando as seis velas estiverem acesas.
+8. As músicas e os efeitos sonoros não se sobrepuserem de forma indesejada ou continuarem tocando quando deveriam parar.
+9. A narrativa explicar o desequilíbrio, a relação entre o protagonista e o antigo amigo, a missão de Mirasol e o descanso final das almas.
+10. O jogo puder ser concluído sem erros críticos.
+
+============================================================
+11. NOTA FINAL DE DESIGN
+============================================================
+
+Entre Memórias é uma história sobre luto, culpa, amizade, lembrança e aceitação. O Día de los Muertos não deve ser representado apenas como cenário assustador: a celebração, as oferendas e as flores também representam memória, vínculo e acolhimento. O mistério deve nascer do desequilíbrio sobrenatural e das decisões dos personagens, enquanto as tradições culturais são tratadas com respeito.
+
+A prioridade da produção é entregar uma experiência curta, coesa e funcional. É melhor finalizar bem dois templos com progressão clara e uma conclusão emocional do que manter quatro templos incompletos. Os conteúdos reduzidos podem continuar existindo no enredo por meio de inscrições, falas e símbolos, sem exigirem quatro áreas jogáveis distintas.
+
+FIM DO DOCUMENTO
