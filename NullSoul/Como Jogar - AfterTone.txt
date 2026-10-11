@@ -1,0 +1,6 @@
+Controles AfterTone
+
+Q - Transicionar entre salas
+E - Usar Item
+TAB - Abrir inventario
+W/A/S/D - Movimentação
