@@ -1,0 +1,5 @@
+Controles Rumo a Vitoria
+
+SETAS - Movimentação
+Z - Interagir
+ESC - Inventario
